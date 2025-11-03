@@ -1,0 +1,125 @@
+/* === Checkout Page Styling === */
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-container {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.checkout h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* === Table === */
+
+.checkout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.checkout-table th,
+.checkout-table td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.checkout-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.checkout-table tr:not(:last-child) td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.checkout-table td {
+  color: #4b5563;
+}
+
+/* === Summary Section === */
+
+.summary {
+  margin-top: 20px;
+  border-top: 2px solid #e5e7eb;
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-row span:first-child {
+  color: #6b7280;
+}
+
+.summary-row strong {
+  color: #111827;
+}
+
+.summary-total {
+  font-size: 18px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* === Pay Button === */
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 28px;
+}
+
+.checkout-btn:hover {
+  background-color: #1e40af;
+}
+
+/* === Responsive === */
+
+@media (max-width: 600px) {
+  .checkout-container {
+    padding: 24px;
+  }
+
+  .checkout h2 {
+    font-size: 24px;
+  }
+
+  .checkout-table th,
+  .checkout-table td {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+}
